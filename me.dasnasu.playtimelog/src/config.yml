@@ -1,0 +1,9 @@
+# the "timeout" defines the time between single scans for players. If timeout is set to a lower value, it can occur that the server starts lagging.
+# If the server starts lagging, set timeout to a higher value. Don't be afraid, for the players it wouldn't do any difference because the calculation
+# uses the timeout as timer. The only possible thing is, that a player joins immediatly after one log an leaves before the next log, so the player
+# will lose playtime equal to the double amount of time defined in timeout-2.
+# E.g. timeout is set to 15 seconds. The player joins after one log so the next 14 seconds the player isn't recognized by the plugin. Then the
+# player leaves directly before the next scan occurs and wouldn't be recognized by the plugin, so he lost a maximum amount of 15 seconds playtime.
+# If you set the timeout to a lower value, the deviation will be smaller.
+timeout: 5
+default: true

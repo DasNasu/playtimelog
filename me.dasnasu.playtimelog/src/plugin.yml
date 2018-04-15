@@ -1,0 +1,56 @@
+name: PlayTime
+version: Release 1.0.0
+description: Plugin to readout the overall playtime of players on the server.
+author: DasNasu
+main: me.dasnasu.playtimelog.PlayTimeLog
+softdepend:
+- permissionsEX
+commands:
+    ptshow:
+        description: Outputs the overall playtime of you.
+        usage: /<command>
+        permission: playtime.user.show
+        aliases:
+        - show
+    ptshowp:
+        description: Outputs the overall playtime of another player.
+        usage: /<command> <Player>
+        permission: playtime.user.show.others
+        aliases:
+        - showp
+    ptset:
+        description: Sets the overall playtime of you to a specific amount of time in seconds.
+        usage: /<command> <amount>
+        permission: playtime.user.set
+        aliases:
+        - set
+    ptsetp:
+        description: Sets the overall playtime of another player to a specific amount of time in seconds.
+        usage: /<command> <Player> <amount>
+        permission: playtime.user.set.others
+        aliases:
+        - setp
+    ptadd:
+        description: Adds to your playtime a specific amount of time in seconds.
+        usage: /command> <amount>
+        permission: playtime.user.add
+        aliases:
+        - add
+    ptaddp:
+        description: Adds to another players playtime a specific amount of time in seconds.
+        usage: /<command> <Player> <amount>
+        permission: playtime.user.add.others
+        aliases:
+        - addp
+    ptreset:
+        description: Completely resets your overall playtime.
+        usage: /command>
+        permission: playtime.user.reset
+        aliases:
+        - reset
+    ptresetp:
+        description: Completely resets the overall playtime of another player.
+        usage: /<command> <Player>
+        permission: playtime.user.reset.others
+        aliases:
+        - resetp
